@@ -4,9 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SelfTaught</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logopng.png" type="image/x-icon">
+    <title>SELFTAUGHT</title>
 </head>
 <body>
+<div class="container">
+    <header class="header">
+        <img src="img/logopng.png" alt="Selftaught logo" class="logo">
+        <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Search">
+            <button class="search__button">
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"> </use>
+                </svg>
+            </button>
+        </form>
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-users"></use>
+                </svg>
+                <span class="user-nav__notification">5</span>
+            </div>
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+                <span class="user-nav__notification">10</span>
+            </div>
+            <div class="user-nav__user">
+                <img src="img/avatar.jpg" alt="avatar" class="user-nav__user-photo">
+                <span class="user-nav__user-name">Matt</span>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <nav class="sidebar">
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-book"></use>
+                        </svg>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span>Donations</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="legal">
+                &copy; 2019 by SelfTaught Team
+            </div>
+        </nav>
+        <main class="courses-inf">
+            <div class="gallery">
+                <figure class="gallery__item">
+                    <img src="img/pictures_describe1.jpg" alt="Photo1" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/pictures_describe2.jpg" alt="Photo2" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/pictures_describe3.jpg" alt="Photo3" class="gallery__photo">
+                </figure>
+            </div>
+            <div class="overview">
+                <h1 class="overview__heading">
+                    Self Taught Course
+                </h1>
+                <div class="overview__stars">
+                    <svg class="overview__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                    </svg>
+                </div>
+                <div class="overview__author">
+                    <svg class="overview__icon-author">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <button class="btn-inline">John Doe</button>
+                </div>
+                <div class="overview__review">
+                    <div class="overview__review-num">
+                        500
+                    </div>
+                    <div class="overview__review-title">
+                        REVIEWS
+                    </div>
+                </div>
+            </div>
 
+            <div class="details">
+                <div class="description">
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eius sed aliquid neque vero possimus eveniet natus pariatur, ducimus esse. Quae!
+                    </p>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Amet alias maxime possimus qui pariatur magni?
+                    </p>
+                    <ul class="list">
+                        <li class="list__item">
+                            17, August 2019
+                        </li>
+                        <li class="list__item">
+                            50 hours
+                        </li>
+                        <li class="list__item">
+                            Payback guaranteee
+                        </li>
+                        <li class="list__item">
+                            10$ Only
+                        </li>
+                        <li class="list__item">
+                            100.000 Students
+                        </li>
+                        <li class="list__item">
+                            For beginners
+                        </li>
+                    </ul>
+                    <div class="recommend">
+                        <p class="recommend__count">
+                            Matt and 500 others love this courses
+                        </p>
+                        <div class="recommend__friends">
+                            <img src="img/person1.jpg" alt="friend 1" class="recommend__photo">
+                            <img src="img/person2.jpg" alt="friend 2" class="recommend__photo">
+                            <img src="img/person3.jpg" alt="friend 3" class="recommend__photo">
+                            <img src="img/person4.jpg" alt="friend 4" class="recommend__photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-reviews">
+                    <figure class="review">
+                        <blockquote class="review__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sint.
+                        </blockquote>
+                        <figcaption class="review__user">
+                            <img src="img/testimonials_person1.jpg" alt="User 1" class="review__photo">
+                            <div class="review__user-box">
+                                <p class="review__user-name">
+                                    John
+                                </p>
+                                <p class="review__user-date">
+                                    15th March 2000
+                                </p>
+                            </div>
+                            <div class="review__rating">
+                                7.5
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="review">
+                        <blockquote class="review__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sint.
+                        </blockquote>
+                        <figcaption class="review__user">
+                            <img src="img/testimonials_person2.jpg" alt="User 2" class="review__photo">
+                            <div class="review__user-box">
+                                <p class="review__user-name">
+                                    Doe
+                                </p>
+                                <p class="review__user-date">
+                                    2nd January 2000
+                                </p>
+                            </div>
+                            <div class="review__rating">
+                                8.0
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <button class="btn-inline">
+                        Show all <span>&rarr;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cta">
+                    <h2 class="cta__enroll-now">
+                        Let join with us and explore yourself
+                    </h2>
+                    <button class="btn">
+                        <span class="btn__visible">
+                            enroll now
+                        </span>
+                        <span class="btn__invisible">
+                            3 hours left sale off
+                        </span>
+                    </button>
+                </div>
+        </main>
+    </div>
+</div>
 </body>
 </html>
